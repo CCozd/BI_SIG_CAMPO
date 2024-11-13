@@ -1,12 +1,13 @@
 import streamlit as st
 
-# Ocultar el menú de GitHub, opciones del menú, header y pie de página
+# Ocultar el menú, encabezado, pie de página y logo de Streamlit
 hide_streamlit_style = """
     <style>
     #MainMenu {visibility: hidden;}
-    footer {visibility: hidden;}
     header {visibility: hidden;}
-    ._link_51w34_10 {display:none} /* Ocultar el texto "Hosted with Streamlit" */
+    footer {visibility: hidden;}
+    .viewerBadge_container__1QSob {display: none;} /* Ocultar el logo "hosted with Streamlit" */
+    .stApp {padding-bottom: 0px;} /* Ajustar el padding para evitar espacio en blanco */
     </style>
     """
 st.markdown(hide_streamlit_style, unsafe_allow_html=True)
