@@ -6,7 +6,7 @@ hide_streamlit_style = """
     #MainMenu {visibility: hidden;}
     footer {visibility: hidden;}
     header {visibility: hidden;}
-    .viewerBadge_link__1S137 {visibility: hidden;} /* Ocultar el texto "Hosted with Streamlit" */
+    ._link_51w34_10 {display:none} /* Ocultar el texto "Hosted with Streamlit" */
     </style>
     """
 st.markdown(hide_streamlit_style, unsafe_allow_html=True)
