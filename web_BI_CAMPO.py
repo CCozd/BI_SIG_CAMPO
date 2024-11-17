@@ -29,4 +29,4 @@ frutas = {
 
 for fruta, url in frutas.items():
     st.title(fruta)
-    st.components.v1.iframe(url,height=600)
+    st.components.v1.iframe(url,height=400)
