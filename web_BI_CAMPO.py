@@ -1,32 +1,33 @@
 import streamlit as st
 
-# Ocultar el menú, encabezado, pie de página y logo de Streamlit
-hide_streamlit_style = """
+# Ocultar el menú de GitHub y otras opciones
+hide_menu_style = """
     <style>
     #MainMenu {visibility: hidden;}
-    header {visibility: hidden;}
     footer {visibility: hidden;}
-    .viewerBadge_container__1QSob {display: none;} /* Ocultar el logo "hosted with Streamlit" */
-    .stApp {padding-bottom: 0px;} /* Ajustar el padding para evitar espacio en blanco */
+    header {visibility: hidden;}
     </style>
     """
-st.markdown(hide_streamlit_style, unsafe_allow_html=True)
+st.markdown(hide_menu_style, unsafe_allow_html=True)
 
-# Títulos y visualización de los informes en iframes
-frutas = {
-    'ARÁNDANO': "https://app.powerbi.com/view?r=eyJrIjoiZjg5MjM2ZjEtYWMzNC00ZmExLTkzMTYtZmE2ZjVhODQyZDJlIiwidCI6ImM4ODRjYzQyLTViMjEtNDA3Mi04YjdhLWE2M2QwYTZmNWQ3OSIsImMiOjR9",
-    'UVA': "https://app.powerbi.com/view?r=eyJrIjoiZDA2ZjQyMmYtMWQxMy00ZmY1LTg0ZDMtZTIwODc5MmNlNmUxIiwidCI6ImM4ODRjYzQyLTViMjEtNDA3Mi04YjdhLWE2M2QwYTZmNWQ3OSIsImMiOjR9",
-    'MANDARINA': "https://app.powerbi.com/view?r=eyJrIjoiNjdhMzBlZWUtOWQwNS00YTI5LWIzNDEtMjM3OGQ1MWIwZGEyIiwidCI6ImM4ODRjYzQyLTViMjEtNDA3Mi04YjdhLWE2M2QwYTZmNWQ3OSIsImMiOjR9",
-    'PALTA': "https://app.powerbi.com/view?r=eyJrIjoiY2YxNDFlNWItMzk3ZC00MzNkLTg1NmEtYTFlMzMxMjBkYjZkIiwidCI6ImM4ODRjYzQyLTViMjEtNDA3Mi04YjdhLWE2M2QwYTZmNWQ3OSIsImMiOjR9",
-    'MANGO': "https://app.powerbi.com/view?r=eyJrIjoiNTUyYTJlYjAtNGViMC00OWRiLTkyMWUtYmMwOTBlOTYyYTBjIiwidCI6ImM4ODRjYzQyLTViMjEtNDA3Mi04YjdhLWE2M2QwYTZmNWQ3OSIsImMiOjR9",
-    'PITAHAYA': "https://app.powerbi.com/view?r=eyJrIjoiNWE4NmQzM2QtNWEzNi00NTYzLWFlOTEtNGVhMzZiZTU0MDhmIiwidCI6ImM4ODRjYzQyLTViMjEtNDA3Mi04YjdhLWE2M2QwYTZmNWQ3OSIsImMiOjR9",
-    'CAQUI': "https://app.powerbi.com/view?r=eyJrIjoiNzFlNWMxZTYtZGRiYy00M2Y3LWI2MTQtZGFlYjZlNDVkNGU3IiwidCI6ImM4ODRjYzQyLTViMjEtNDA3Mi04YjdhLWE2M2QwYTZmNWQ3OSIsImMiOjR9",
-    'LIMÓN': "https://app.powerbi.com/view?r=eyJrIjoiYzgxYWNiNDktZTExNi00NTE1LWI0ODAtOGY2MTgwODRiYjc1IiwidCI6ImM4ODRjYzQyLTViMjEtNDA3Mi04YjdhLWE2M2QwYTZmNWQ3OSIsImMiOjR9",
-    'INDICADOR BPAs': "https://app.powerbi.com/view?r=eyJrIjoiM2QwYmM2Y2ItYzUzNy00ZWRlLWFlZjYtOTNiMmFlZjNjZDVhIiwidCI6ImM4ODRjYzQyLTViMjEtNDA3Mi04YjdhLWE2M2QwYTZmNWQ3OSIsImMiOjR9",
-    'Evaluaciones fitosanitarias - MANGO': "https://app.powerbi.com/view?r=eyJrIjoiOTlhYzFhZWItZGE3Ny00ZmU5LTk4OTItOTRlNmM5MjIwZTQ4IiwidCI6ImM4ODRjYzQyLTViMjEtNDA3Mi04YjdhLWE2M2QwYTZmNWQ3OSIsImMiOjR9",
-    'Evaluaciones fitosanitarias - UVA': "https://app.powerbi.com/view?r=eyJrIjoiMWEyNWEyZjktNDJmMC00ZWVhLWE5MzItMjM3ZWNmYjQzMzBiIiwidCI6ImM4ODRjYzQyLTViMjEtNDA3Mi04YjdhLWE2M2QwYTZmNWQ3OSIsImMiOjR9"
-}
+# Ocultar el pie de página "Hosted with Streamlit"
+hide_footer_style = """
+    <style>
+    footer {visibility: hidden;}
+    </style>
+    """
+st.markdown(hide_footer_style, unsafe_allow_html=True)
 
-for fruta, url in frutas.items():
-    st.title(fruta)
-    st.components.v1.iframe(url,height=400)
+st.title('PREDICCIÓN EVENTOS CLIMATICOS')
+st.components.v1.iframe("https://app.powerbi.com/view?r=eyJrIjoiMGQzYzA2MjUtNDcxZS00ZjhjLTlkYjYtYmNhYmU4ZmM2YTI3IiwidCI6ImM4ODRjYzQyLTViMjEtNDA3Mi04YjdhLWE2M2QwYTZmNWQ3OSIsImMiOjR9", height=400)
+st.title('PREDICCIÓN DESARROLLO FLORAL ')
+st.components.v1.iframe("https://app.powerbi.com/view?r=eyJrIjoiYzQxZTQ1YzgtYjU3Ni00MjhkLTkyNjEtZGVmZWMzZDVlN2ZlIiwidCI6ImM4ODRjYzQyLTViMjEtNDA3Mi04YjdhLWE2M2QwYTZmNWQ3OSIsImMiOjR9", height=400)
+st.title('INDICE DE BALANCE - PALTA')
+st.components.v1.iframe("https://app.powerbi.com/view?r=eyJrIjoiZDg3MzRkMWItYWFjNy00NDQ2LTg5ZDUtNWQyOGZmMjAxNGEwIiwidCI6ImM4ODRjYzQyLTViMjEtNDA3Mi04YjdhLWE2M2QwYTZmNWQ3OSIsImMiOjR9", height=400)
+st.title('INDICE DE BALANCE - ARÁNDANO')
+st.components.v1.iframe("https://app.powerbi.com/view?r=eyJrIjoiMDc0OTFjM2UtZTBhZi00ZjhjLTkwNDEtNWZhZjFiMjViNjYxIiwidCI6ImM4ODRjYzQyLTViMjEtNDA3Mi04YjdhLWE2M2QwYTZmNWQ3OSIsImMiOjR9", height=400)
+st.title('INDICE DE BALANCE - MANGO')
+st.components.v1.iframe("https://app.powerbi.com/view?r=eyJrIjoiZmRiMzMzZWQtOWY3NC00MzRkLWIwZmQtMGYwNzE5NzAzZWU3IiwidCI6ImM4ODRjYzQyLTViMjEtNDA3Mi04YjdhLWE2M2QwYTZmNWQ3OSIsImMiOjR9", height=400)
+st.title('ANÁLISIS FENOLÓGICOS')
+st.components.v1.iframe("https://app.powerbi.com/view?r=eyJrIjoiMzg0M2E0MTgtMzUyYi00OTVmLTg5MjItYzg3NWEwNjE5Y2VmIiwidCI6ImM4ODRjYzQyLTViMjEtNDA3Mi04YjdhLWE2M2QwYTZmNWQ3OSIsImMiOjR9", height=400)
+st.title('INVESTIGACIONES CIENTÍIFCAS')
