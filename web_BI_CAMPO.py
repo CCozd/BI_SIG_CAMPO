@@ -31,4 +31,4 @@ st.components.v1.iframe("https://app.powerbi.com/view?r=eyJrIjoiMDc0OTFjM2UtZTBh
 st.title('INDICE DE BALANCE - MANGO')
 st.components.v1.iframe("https://app.powerbi.com/view?r=eyJrIjoiZmRiMzMzZWQtOWY3NC00MzRkLWIwZmQtMGYwNzE5NzAzZWU3IiwidCI6ImM4ODRjYzQyLTViMjEtNDA3Mi04YjdhLWE2M2QwYTZmNWQ3OSIsImMiOjR9", height=400)
 st.title('ANÁLISIS FENOLÓGICOS')
-st.components.v1.iframe("https://app.powerbi.com/view?r=eyJrIjoiMzg0M2E0MTgtMzUyYi00OTVmLTg5MjItYzg3NWEwNjE5Y2VmIiwidCI6ImM4ODRjYzQyLTViMjEtNDA3Mi04YjdhLWE2M2QwYTZmNWQ3OSIsImMiOjR9", height=400)
+st.components.v1.iframe("https://app.powerbi.com/view?r=eyJrIjoiYmIyYTU1ZmUtNDg1Mi00NDcyLTk3MmQtMGVkODY2ZWQxNGZmIiwidCI6ImM4ODRjYzQyLTViMjEtNDA3Mi04YjdhLWE2M2QwYTZmNWQ3OSIsImMiOjR9", height=400)
