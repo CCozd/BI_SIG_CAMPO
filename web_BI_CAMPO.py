@@ -35,6 +35,6 @@ st.components.v1.iframe("https://app.powerbi.com/view?r=eyJrIjoiYmIyYTU1ZmUtNDg1
 st.title('INVESTIGACIONES CIÉNTIFICAS EN CAMPO Y POSTCOSECHA')
 st.components.v1.iframe("https://app.powerbi.com/view?r=eyJrIjoiMGFhYzVkNWMtNDUwMi00NzFjLWFjOTAtNzkzOWI3YjAxMmFmIiwidCI6ImM4ODRjYzQyLTViMjEtNDA3Mi04YjdhLWE2M2QwYTZmNWQ3OSIsImMiOjR9", height=400)
 st.title('RENDIMIENTOS - SERVICIOS AGRÍCOLAS')
-st.components.v1.iframe("https://app.powerbi.com/view?r=eyJrIjoiMTI3MTQ5NTktMWIyOC00MTdjLTg5NWItYTcwODYxZWI4ODI3IiwidCI6ImM4ODRjYzQyLTViMjEtNDA3Mi04YjdhLWE2M2QwYTZmNWQ3OSIsImMiOjR9|", height=400)
+st.components.v1.iframe("https://app.powerbi.com/view?r=eyJrIjoiMTI3MTQ5NTktMWIyOC00MTdjLTg5NWItYTcwODYxZWI4ODI3IiwidCI6ImM4ODRjYzQyLTViMjEtNDA3Mi04YjdhLWE2M2QwYTZmNWQ3OSIsImMiOjR9", height=400)
 st.title('FERTIRRIEGO Y NUTRICIÓN')
 st.components.v1.iframe("https://app.powerbi.com/view?r=eyJrIjoiNzhkMDE2ODYtNmYwNy00MGIyLWE5NzAtZDA1OWM4YTk5MjM3IiwidCI6ImM4ODRjYzQyLTViMjEtNDA3Mi04YjdhLWE2M2QwYTZmNWQ3OSIsImMiOjR9", height=400)
