@@ -64,3 +64,21 @@ st.title('MICROBIOLOGÍA - FRUTA CONGELADO')
 st.components.v1.iframe("https://app.powerbi.com/view?r=eyJrIjoiNjMxMjhkNWItOTU2MS00YmYzLTlmODgtOWM2ZTk4NDlhNTk0IiwidCI6ImM4ODRjYzQyLTViMjEtNDA3Mi04YjdhLWE2M2QwYTZmNWQ3OSIsImMiOjR9", height=400)
 st.title('ONE PAGE')
 st.components.v1.iframe("https://app.powerbi.com/view?r=eyJrIjoiYWE2MWMxNjYtYjAyOS00MmY5LTgyNGItY2U0YzI4NTM2YTlkIiwidCI6ImM4ODRjYzQyLTViMjEtNDA3Mi04YjdhLWE2M2QwYTZmNWQ3OSIsImMiOjR9", height=400)
+
+
+uploaded_pptx = st.file_uploader("Sube una presentación PowerPoint (.pptx)", type=["pptx"])
+
+if uploaded_pptx is not None:
+    presentation = Presentation(io.BytesIO(uploaded_pptx.read()))
+    st.success(f"Archivo cargado: {uploaded_pptx.name}")
+    
+    for i, slide in enumerate(presentation.slides):
+        st.subheader(f"🖼️ Diapositiva {i+1}")
+        slide_text = ""
+        for shape in slide.shapes:
+            if hasattr(shape, "text"):
+                slide_text += shape.text.strip() + "\n"
+        if slide_text.strip():
+            st.text(slide_text.strip())
+        else:
+            st.info("Esta diapositiva no contiene texto.")
