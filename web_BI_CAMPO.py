@@ -61,6 +61,6 @@ st.components.v1.iframe("https://app.powerbi.com/view?r=eyJrIjoiZjg5MjM2ZjEtYWMz
 st.title('CAMPO PALTA')
 st.components.v1.iframe("https://app.powerbi.com/view?r=eyJrIjoiY2YxNDFlNWItMzk3ZC00MzNkLTg1NmEtYTFlMzMxMjBkYjZkIiwidCI6ImM4ODRjYzQyLTViMjEtNDA3Mi04YjdhLWE2M2QwYTZmNWQ3OSIsImMiOjR9", height=400)
 st.title('MICROBIOLOGÍA - FRUTA CONGELADO')
-st.components.v1.iframe("hhttps://app.powerbi.com/view?r=eyJrIjoiNjMxMjhkNWItOTU2MS00YmYzLTlmODgtOWM2ZTk4NDlhNTk0IiwidCI6ImM4ODRjYzQyLTViMjEtNDA3Mi04YjdhLWE2M2QwYTZmNWQ3OSIsImMiOjR9", height=400)
+st.components.v1.iframe("https://app.powerbi.com/view?r=eyJrIjoiNjMxMjhkNWItOTU2MS00YmYzLTlmODgtOWM2ZTk4NDlhNTk0IiwidCI6ImM4ODRjYzQyLTViMjEtNDA3Mi04YjdhLWE2M2QwYTZmNWQ3OSIsImMiOjR9", height=400)
 st.title('ONE PAGE')
 st.components.v1.iframe("https://app.powerbi.com/view?r=eyJrIjoiYWE2MWMxNjYtYjAyOS00MmY5LTgyNGItY2U0YzI4NTM2YTlkIiwidCI6ImM4ODRjYzQyLTViMjEtNDA3Mi04YjdhLWE2M2QwYTZmNWQ3OSIsImMiOjR9", height=400)
