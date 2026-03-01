@@ -1,5 +1,3 @@
-web_BI_CAMPO.py
-
 import streamlit as st
 
 # Ocultar el menú de GitHub y otras opciones
